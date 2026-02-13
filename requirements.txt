@@ -1,0 +1,16 @@
+streamlit
+pandas
+numpy
+langchain
+langchain-community
+langchain-text-splitters
+faiss-cpu
+python-dotenv
+sentence-transformers
+transformers
+torch
+datasets
+scikit-learn
+matplotlib
+seaborn
+tqdm
