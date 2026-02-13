@@ -1,54 +1,27 @@
-# Sports Q&A Bot
+# 💫 About Me:
+<h1 align="center">Hi 👋, I'm Shiv Bhardwaj</h1><br><h3 align="center">M.Tech AID | AI Researcher | Cybersecurity Enthusiast | Deep Learning Explorer</h3><br><br>---<br><br>## 🚀 About Me :<br><br>```diff<br>+ 🔭 I’m currently working on:<br>  - LSTM-based Chess Move Prediction (PyTorch)<br>  - NLP Question Answering System<br>  - Crypto Regulation & Blockchain Investigation Research<br><br>+ 👯 I’m looking to collaborate on:<br>  - AI Research Projects<br>  - Cybersecurity & Digital Forensics Projects<br>  - Open-source Deep Learning Systems<br><br>+ 🤝 I’m looking for help with:<br>  - Advanced Model Optimization<br>  - Research Paper Writing & Publication<br>  - Scalable AI System Design<br><br>+ 🌱 I’m currently learning:<br>  - Advanced NLP & Transformers<br>  - Model Architecture Optimization<br>  - Secure AI & Privacy-aware Systems<br><br>+ 💬 Ask me about:<br>  - LSTM, RNN, GRU<br>  - PyTorch & Deep Learning<br>  - Blockchain Basics & Crypto Regulations<br>  - Django & Backend Systems<br><br>+ ⚡ Fun fact:<br>  - I combine discipline from sports 🏸 with AI research mindset 🤖<br>  - “If you stop practicing your art, it will soon go away.”<br>### 💻 Languages<br>Python | SQL | JavaScript<br><br>### 🤖 AI & ML<br>PyTorch | TensorFlow | Scikit-learn | NLP | LSTM | RNN | Deep Learning<br><br>### 🌐 Web & App<br>Django | React Native | Firebase | REST APIs<br><br>### 🔐 Security & Research<br>Blockchain Basics | Crypto Investigation | Digital Forensics Concepts<br><br>### ⚙️ Tools<br>Git | GitHub | VS Code | Linux | Jupyter Notebook<br>![Shiv's GitHub stats](https://github-readme-stats.vercel.app/api?username=Shiv-Bhardwaj-04&show_icons=true&theme=radical)<br><br>![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Shiv-Bhardwaj-04&layout=compact&theme=radical)<br>- LinkedIn: https://www.linkedin.com/in/shiv-bhardwaj-984584221/<br>- Email: shivkr881@gmail.com<br><br>
 
-A Streamlit-based chatbot that answers questions about Football, Cricket, and UFC using RAG (Retrieval Augmented Generation).
 
-## Setup Instructions
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Shiv Bhardwaj) [![Mastodon](https://img.shields.io/badge/-MASTODON-%232B90D9?logo=mastodon&logoColor=white)](https://mastodon.social/@Shiv Bhardwaj) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:shivkr881@gmail.com) 
 
-### 1. Install Dependencies
-Run the setup script:
-```bash
-setup.bat
-```
+# 💻 Tech Stack:
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Vue.js](https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=shiv-bhardwaj-04&theme=dark&hide_border=true&include_all_commits=true&count_private=true)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=shiv-bhardwaj-04&theme=dark&hide_border=true)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=shiv-bhardwaj-04&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
 
-Or manually install:
-```bash
-pip install -r requirements.txt
-```
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=shiv-bhardwaj-04&theme=radical&no-frame=false&no-bg=true&margin-w=4)
 
-### 2. Configure OpenAI API Key
-Edit the `.env` file and add your OpenAI API key:
-```
-OPENAI_API_KEY=sk-your-actual-api-key-here
-```
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=merko)
 
-### 3. Process Data (Optional - First Time)
-If you want to pre-process the data before running the app:
-```bash
-python train_and_test.py
-```
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=shiv-bhardwaj-04&limit=5&theme=shadow_blue&combine_all_yearly_contributions=true)
 
-### 4. Run the Streamlit App
-Run the app script:
-```bash
-run.bat
-```
+---
+[![](https://visitcount.itsvg.in/api?id=shiv-bhardwaj-04&icon=0&color=0)](https://visitcount.itsvg.in)
 
-Or manually:
-```bash
-streamlit run app/main.py
-```
-
-The app will open in your browser at `http://localhost:8501`
-
-## Usage
-
-1. Click "Process/Reload Data" in the sidebar to load and index your sports data
-2. Ask questions in the chat interface
-3. View sources for each answer
-
-## Data Structure
-
-Place your data files in:
-- `data/football/` - Football-related CSV/PDF/TXT files
-- `data/cricket/` - Cricket-related CSV/PDF/TXT files
-- `data/ufc/` - UFC-related CSV/PDF/TXT files
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
