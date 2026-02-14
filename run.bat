@@ -1,3 +1,0 @@
-@echo off
-echo Starting Sports Q&A Bot...
-streamlit run app/main.py

@@ -1,4 +1,4 @@
-import streamlit as st
+﻿import streamlit as st
 import os
 import sys
 
@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 try:
     from src.retrieval import get_vector_store, get_qa_chain
-    from cricket_query_engine import CricketQueryEngine
+    from src.query_engine import CricketQueryEngine
 except ImportError as e:
     st.error(f"Import Error: {e}")
     st.stop()
@@ -16,7 +16,7 @@ except ImportError as e:
 st.set_page_config(
     page_title="Cricket Stats Bot", 
     layout="wide", 
-    page_icon="🏏",
+    page_icon="C",
     initial_sidebar_state="expanded"
 )
 
@@ -191,30 +191,30 @@ st.markdown("""
 # Header
 st.markdown("""
 <div class="cricket-header">
-    <div class="cricket-title">🏏 Cricket Stats Bot</div>
-    <div class="cricket-subtitle">Your AI-Powered Cricket Statistics Expert • ODI • T20 • Test</div>
+    <div class="cricket-title">Cricket Stats Bot</div>
+    <div class="cricket-subtitle">Your AI-powered cricket statistics expert - ODI | T20 | Test</div>
 </div>
 """, unsafe_allow_html=True)
 
 # Sponsor Banner
 st.markdown("""
 <div class="sponsor-banner">
-    <div class="sponsor-title">⭐ POWERED BY OUR SPONSORS</div>
+    <div class="sponsor-title">POWERED BY OUR SPONSORS</div>
     <div class="sponsor-logos">
-        <div class="sponsor-item">🏏 CricketGear Pro</div>
-        <div class="sponsor-item">📊 StatsHub Analytics</div>
-        <div class="sponsor-item">🎯 SportsTech AI</div>
-        <div class="sponsor-item">⚡ FastBowl Equipment</div>
+        <div class="sponsor-item">CricketGear Pro</div>
+        <div class="sponsor-item">StatsHub Analytics</div>
+        <div class="sponsor-item">SportsTech AI</div>
+        <div class="sponsor-item">FastBowl Equipment</div>
     </div>
 </div>
 """, unsafe_allow_html=True)
 
 # Sidebar
 with st.sidebar:
-    st.markdown("### 🎯 Suggested Questions")
+    st.markdown("### Suggested Questions")
     
     # Batting Questions
-    with st.expander("🏏 Batting Records", expanded=True):
+    with st.expander("Batting Records", expanded=True):
         batting_questions = [
             "Most runs in ODI?",
             "Most runs in T20?",
@@ -228,7 +228,7 @@ with st.sidebar:
                 st.session_state.suggested_query = q
     
     # Bowling Questions
-    with st.expander("🎳 Bowling Records"):
+    with st.expander("Bowling Records"):
         bowling_questions = [
             "Most wickets in ODI?",
             "Most wickets in T20?",
@@ -239,7 +239,7 @@ with st.sidebar:
                 st.session_state.suggested_query = q
     
     # Career Stats
-    with st.expander("📊 Career Stats"):
+    with st.expander("Career Stats"):
         career_questions = [
             "Most matches in ODI?",
             "Most matches in Test?",
@@ -252,7 +252,7 @@ with st.sidebar:
     st.markdown("---")
     
     # Data info
-    st.markdown("### 📚 Database Info")
+    st.markdown("### Database Info")
     st.markdown("""
     <div class="info-box">
         <p style='margin: 5px 0; color: #37474f;'><b>Total Records:</b> 22,752</p>
@@ -265,7 +265,7 @@ with st.sidebar:
     st.markdown("---")
     
     # Tips
-    st.markdown("### 💡 How to Use")
+    st.markdown("### How to Use")
     st.markdown("""
     - Click suggested questions above
     - Type your own questions below
@@ -276,15 +276,15 @@ with st.sidebar:
     st.markdown("---")
     
     # Sponsor section in sidebar
-    st.markdown("### 🤝 Our Partners")
+    st.markdown("### Our Partners")
     st.markdown("""
     <div style='background: white; padding: 0.8rem; border-radius: 8px; border: 2px solid #e3f2fd; text-align: center;'>
-        <p style='margin: 5px 0; color: #1976d2; font-weight: 600; font-size: 0.85rem;'>🏏 CricketGear Pro</p>
+        <p style='margin: 5px 0; color: #1976d2; font-weight: 600; font-size: 0.85rem;'>CricketGear Pro</p>
         <p style='margin: 5px 0; color: #546e7a; font-size: 0.75rem;'>Premium Cricket Equipment</p>
     </div>
     <br>
     <div style='background: white; padding: 0.8rem; border-radius: 8px; border: 2px solid #e3f2fd; text-align: center;'>
-        <p style='margin: 5px 0; color: #1976d2; font-weight: 600; font-size: 0.85rem;'>📊 StatsHub Analytics</p>
+        <p style='margin: 5px 0; color: #1976d2; font-weight: 600; font-size: 0.85rem;'>StatsHub Analytics</p>
         <p style='margin: 5px 0; color: #546e7a; font-size: 0.75rem;'>Advanced Sports Analytics</p>
     </div>
     """, unsafe_allow_html=True)
@@ -303,7 +303,7 @@ try:
     vector_store = load_vector_store()
     
     if not vector_store:
-        st.error("Data not found! Please run 'python train_and_test.py' first.")
+        st.error("Data not found! Please run 'python scripts/build_index.py' first.")
         st.stop()
 except Exception as e:
     st.error(f"Error loading data: {str(e)}")
@@ -313,7 +313,7 @@ except Exception as e:
 if "messages" not in st.session_state:
     st.session_state.messages = [{
         "role": "assistant", 
-        "content": "👋 **Welcome to Cricket Stats Bot!**\n\nI can help you with cricket statistics across ODI, T20, and Test formats.\n\n**Try asking:**\n- Who scored the most runs in ODI?\n- Most wickets in Test cricket?\n- Player statistics and records\n\nClick the suggested questions in the sidebar or type your own question below!"
+        "content": "**Welcome to Cricket Stats Bot!**\n\nI can help you with cricket statistics across ODI, T20, and Test formats.\n\n**Try asking:**\n- Who scored the most runs in ODI?\n- Most wickets in Test cricket?\n- Player statistics and records\n\nClick the suggested questions in the sidebar or type your own question below."
     }]
 
 if "suggested_query" not in st.session_state:
@@ -321,8 +321,7 @@ if "suggested_query" not in st.session_state:
 
 # Display chat messages
 for message in st.session_state.messages:
-    avatar = "🏏" if message["role"] == "assistant" else "👤"
-    with st.chat_message(message["role"], avatar=avatar):
+    with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
 # Handle suggested query
@@ -330,19 +329,19 @@ if st.session_state.suggested_query:
     prompt = st.session_state.suggested_query
     st.session_state.suggested_query = None
 else:
-    prompt = st.chat_input("💬 Ask me about cricket statistics...")
+    prompt = st.chat_input("Ask me about cricket statistics...")
 
 if prompt:
     # Add user message
     st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user", avatar="👤"):
+    with st.chat_message("user"):
         st.markdown(prompt)
 
     # Generate answer
-    with st.chat_message("assistant", avatar="🏏"):
+    with st.chat_message("assistant"):
         message_placeholder = st.empty()
         
-        with st.spinner("🔍 Searching cricket database..."):
+        with st.spinner("Searching cricket database..."):
             try:
                 # Try intelligent query engine first
                 smart_answer = query_engine.answer_query(prompt)
@@ -363,7 +362,7 @@ if prompt:
                     
                     # Show sources
                     if sources:
-                        with st.expander("📚 View Sources"):
+                        with st.expander("View Sources"):
                             for i, doc in enumerate(sources[:5], 1):
                                 player = doc.metadata.get('player', 'Unknown')
                                 format_type = doc.metadata.get('format', 'Unknown')
@@ -390,7 +389,7 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown("""
     <div class="metric-card">
-        <div style='font-size: 2rem;'>🏏</div>
+        <div style='font-size: 2rem;'>DATA</div>
         <div class="metric-value">22,752</div>
         <div class="metric-label">Total Players</div>
     </div>
@@ -399,7 +398,7 @@ with col1:
 with col2:
     st.markdown("""
     <div class="metric-card">
-        <div style='font-size: 2rem;'>🎯</div>
+        <div style='font-size: 2rem;'>FORM</div>
         <div class="metric-value">3</div>
         <div class="metric-label">Formats</div>
     </div>
@@ -408,7 +407,7 @@ with col2:
 with col3:
     st.markdown("""
     <div class="metric-card">
-        <div style='font-size: 2rem;'>📊</div>
+        <div style='font-size: 2rem;'>CATS</div>
         <div class="metric-value">3</div>
         <div class="metric-label">Categories</div>
     </div>
@@ -417,11 +416,12 @@ with col3:
 with col4:
     st.markdown("""
     <div class="metric-card">
-        <div style='font-size: 2rem;'>⚡</div>
+        <div style='font-size: 2rem;'>FAST</div>
         <div class="metric-value">&lt;2s</div>
         <div class="metric-label">Response Time</div>
     </div>
     """, unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; color: #546e7a; font-size: 0.9rem;'>🏏 Built with ❤️ for Cricket Fans | Powered by AI & Machine Learning</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #546e7a; font-size: 0.9rem;'>Built for cricket fans | Powered by AI and machine learning</p>", unsafe_allow_html=True)
+

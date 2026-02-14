@@ -1,6 +1,5 @@
-import os
+﻿import os
 import pandas as pd
-from langchain_community.document_loaders import CSVLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 
@@ -98,3 +97,4 @@ if __name__ == "__main__":
         print(f"\n[OK] Ready to index {len(chunks)} chunks")
     else:
         print("No documents found!")
+
